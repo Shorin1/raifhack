@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { Button, Col, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, Collapse } from "reactstrap";
 import IwGdupoAlert from '../IwGdupoAlert';
-import useSettings from '../hooks/useSettings';
 import pageNames from './pageNames';
 
 const Header = () => {

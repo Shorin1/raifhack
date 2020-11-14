@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Card, CardTitle, Container, CardHeader, CardBody, InputGroup, CardFooter, Button, InputGroupAddon, InputGroupText, Input } from "reactstrap";
-import useSettings from "../global/hooks/useSettings";
 
 const Settings = () => {
     const [nameInput, setNameInput] = useState("");
