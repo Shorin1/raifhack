@@ -1,27 +1,20 @@
-import { Container, Row, Col, Card } from "reactstrap";
+import { Container, Row, Col, Card, Button, CardHeader, CardTitle } from "reactstrap";
 
 const Order = () => {
     return (
         <Container className="mt-3">
             <Row>
-                <Col lg='8'>
+                {/* Список заказов */}
+                <Col lg='8' className="align-self-start">
                     <Card body>
-                        <Row>
-                            <Col lg='3'>
-
-                            </Col>
-                            <Col lg='6'>
-
-                            </Col>
-                            <Col lg='3'>
-
-                            </Col>
-                        </Row>
+                        
                     </Card>
                 </Col>
-                <Col lg='4'>
+                {/* Оплатить */}
+                <Col lg='4' className="align-self-start">
                     <Card body>
-
+                        <CardTitle><h5>Сумма заказа: 5000 р</h5></CardTitle>
+                        <Button color="warning">Оплатить</Button>
                     </Card>
                 </Col>
             </Row>

@@ -17,6 +17,7 @@ const Table = () => {
             <Row>
                 {tableItems.map((item, index) =>
                     <TableItem 
+                        key={index}
                         name={item.name}
                         orders={item.orders}
                         totalPrice={item.totalPrice}
