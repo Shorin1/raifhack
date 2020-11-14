@@ -61,7 +61,7 @@ const Header = () => {
 
     return (
         <>
-            <Container fluid>
+            <Container className="p-0 m-0" fluid>
                 <Navbar color="light" light expand="md">
                     <NavbarBrand href="/">iwGdupo</NavbarBrand>
                     <Collapse navbar>
