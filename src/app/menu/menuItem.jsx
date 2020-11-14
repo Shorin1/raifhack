@@ -31,7 +31,7 @@ const MenuItem = (itemInfo = { id: 0, name: "", shortImg: "", description: "", w
 
     return (
         <>
-            <Col lg="4">
+            <Col className="mt-3" lg="4">
                 <Card className="text-center">
                     <CardHeader>
                         <CardTitle tag="h3">{itemInfo.name}</CardTitle>
