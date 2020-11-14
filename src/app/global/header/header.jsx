@@ -2,12 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { Button, Col, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, Collapse } from "reactstrap";
 import IwGdupoAlert from '../IwGdupoAlert';
-import useSettings from '../settings';
+import useSettings from '../hooks/useSettings';
 import pageNames from './pageNames';
 
 const Header = () => {
-    const settings = useSettings();
-
     const history = useHistory();
 
     const [activeItem, setActiveItem] = useState(pageNames.menu);
@@ -66,7 +64,7 @@ const Header = () => {
         <>
             <Container fluid>
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">{settings.name}</NavbarBrand>
+                    <NavbarBrand href="/">iwGdupo</NavbarBrand>
                     <Collapse navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
@@ -79,7 +77,7 @@ const Header = () => {
                                 <NavLink href="#" onClick={callWaiter}>Позвать официанта</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">Настройки</NavLink>
+                                <NavLink href="#" active={activeItem == pageNames.settings} onClick={toSettings}>Настройки</NavLink>
                             </NavItem>
 
                         </Nav>
