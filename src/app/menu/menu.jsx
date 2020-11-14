@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'reactstrap';
-import Header from '../global/header/header';
-import pageNames from '../global/header/pageNames';
 import MenuItem from './menuItem';
 
 const Menu = () => {

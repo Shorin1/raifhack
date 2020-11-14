@@ -1,7 +1,4 @@
 import { Container, Row, Col, Card } from "reactstrap";
-import pageNames from "../global/header/pageNames";
-
-const { default: Header } = require("../global/header/header")
 
 const Order = () => {
     return (
